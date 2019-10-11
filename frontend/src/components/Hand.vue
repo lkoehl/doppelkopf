@@ -93,7 +93,7 @@ export default {
 }
 
 .card-leave-active {
-  transition: all 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 0s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 .top .card-leave-to {

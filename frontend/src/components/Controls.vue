@@ -18,6 +18,11 @@ export default {
       required: true
     }
   },
+  events: {
+    pressed: function() {
+      this.$emit("nextTrick");
+    }
+  },
   methods: {
     triggerNextTrick: function() {
       this.$emit("nextTrick");

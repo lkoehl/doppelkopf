@@ -57,7 +57,7 @@ export class Player {
     this.game.currentRound.nextPlayer();
 
     if (options.autoplay === true) {
-      setTimeout(() => this.game.currentRound.nextMove(), 800);
+      setTimeout(() => this.game.currentRound.nextMove(), 0);
     }
   }
 
