@@ -28,8 +28,8 @@ export default {
   },
   data: function() {
     return {
-      isCovered: !this.player.isHuman,
-      isHandSelectable: this.player.isHuman
+      isCovered: this.player.isHuman,
+      isHandSelectable: !this.player.isHuman
     };
   },
   components: {

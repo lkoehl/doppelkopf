@@ -8,11 +8,11 @@ import { generateNames } from "@/models/nameGenerator";
 
 export class Game {
   constructor() {
-    const isHuman = true;
+    //const isHuman = true;
     const isComputer = false;
     const randomNames = generateNames(4);
     this.players = [
-      new Player(randomNames[0], isHuman, "bottom", this),
+      new Player(randomNames[0], isComputer, "bottom", this),
       new Player(randomNames[1], isComputer, "left", this),
       new Player(randomNames[2], isComputer, "top", this),
       new Player(randomNames[3], isComputer, "right", this)
