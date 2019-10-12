@@ -12,3 +12,9 @@ export class RandomCardBehavior {
     return sample(playableCards(hand.cards, baseCard));
   }
 }
+
+export class ReinforcmentLearningBehavior {
+  cardToPlay() {
+    return 0;
+  }
+}
