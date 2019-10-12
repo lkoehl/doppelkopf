@@ -60,6 +60,16 @@ export default {
     highlight: function(card) {
       return this.playableCards.includes(card);
     }
+  },
+  mounted() {
+    window.addEventListener("keyup", event => {
+      console.log(event.keyCode);
+      if (event.keyCode > 48 && event.keyCode < 58) {
+        this.select(this.hand.cards[event.keyCode - 49]);
+      }else if (event.keyCode == 48) {
+        this.select(this.hand.cards[9]);
+      }
+    });
   }
 };
 </script>

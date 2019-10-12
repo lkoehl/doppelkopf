@@ -30,6 +30,16 @@ export default {
     triggerFinish: function() {
       this.$emit("finishRound");
     }
+  },
+  mounted() {
+    window.addEventListener("keydown", event => {
+      if (event.keyCode === 13) {
+        if (this.game.currentRound.noMoreCardsLeft) {
+          this.triggerFinish();
+        }
+        this.triggerNextTrick();
+      }
+    });
   }
 };
 </script>
