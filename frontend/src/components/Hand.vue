@@ -67,7 +67,7 @@ export default {
       if (event.keyCode > 48 && event.keyCode < 58) {
         this.select(this.hand.cards[event.keyCode - 49]);
       }else if (event.keyCode == 48) {
-        this.select(this.hand.cards[9]);
+        this.select(this.hand.cards[this.hand.cards.length - 1]);
       }
     });
   }
