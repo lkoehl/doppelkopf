@@ -31,14 +31,17 @@ export class Round {
   }
 
   nextMove() {
-    if (this.waitingForPlayer().isHuman) {
+    /* if (!options.autoNextTrick && this.waitingForPlayer().isHuman) {
       return;
     }
 
-    if (this.currentTrick.isFinished() || this.isFinished()) {
+    if (
+      !options.autoNextTrick &&
+      (this.currentTrick.isFinished() || this.isFinished())
+    ) {
       return;
     }
-
+*/
     this.waitingForPlayer().autoplay();
   }
 

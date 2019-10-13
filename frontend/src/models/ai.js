@@ -1,4 +1,4 @@
-import RL from "rl";
+import RL from "./rl";
 
 export class AI {
   constructor(states, actions) {
